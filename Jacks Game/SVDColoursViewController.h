@@ -1,5 +1,5 @@
 //
-//  SVDViewController.h
+//  SVDColoursViewController.h
 //  Jacks Game
 //
 //  Created by Adam Chamberlin on 24/07/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SVDViewController : UIViewController
+@interface SVDColoursViewController : UIViewController
 
 @end

@@ -18,7 +18,10 @@
 		665FF6A7179FBD980025F3B4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 665FF6A6179FBD980025F3B4 /* Default-568h@2x.png */; };
 		665FF6AA179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665FF6A8179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard */; };
 		665FF6AD179FBD980025F3B4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665FF6AB179FBD980025F3B4 /* MainStoryboard_iPad.storyboard */; };
-		665FF6B0179FBD980025F3B4 /* SVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6AF179FBD980025F3B4 /* SVDViewController.m */; };
+		665FF6B0179FBD980025F3B4 /* SVDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6AF179FBD980025F3B4 /* SVDMainViewController.m */; };
+		665FF6BA179FBE130025F3B4 /* SVDNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6B9179FBE130025F3B4 /* SVDNumbersViewController.m */; };
+		665FF6BD179FBE8A0025F3B4 /* SVDColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6BC179FBE8A0025F3B4 /* SVDColoursViewController.m */; };
+		665FF6C0179FBE990025F3B4 /* SVDLettersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6BF179FBE990025F3B4 /* SVDLettersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +40,14 @@
 		665FF6A6179FBD980025F3B4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		665FF6A9179FBD980025F3B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		665FF6AC179FBD980025F3B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		665FF6AE179FBD980025F3B4 /* SVDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVDViewController.h; sourceTree = "<group>"; };
-		665FF6AF179FBD980025F3B4 /* SVDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVDViewController.m; sourceTree = "<group>"; };
+		665FF6AE179FBD980025F3B4 /* SVDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVDMainViewController.h; sourceTree = "<group>"; };
+		665FF6AF179FBD980025F3B4 /* SVDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVDMainViewController.m; sourceTree = "<group>"; };
+		665FF6B8179FBE130025F3B4 /* SVDNumbersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVDNumbersViewController.h; sourceTree = "<group>"; };
+		665FF6B9179FBE130025F3B4 /* SVDNumbersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVDNumbersViewController.m; sourceTree = "<group>"; };
+		665FF6BB179FBE8A0025F3B4 /* SVDColoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVDColoursViewController.h; sourceTree = "<group>"; };
+		665FF6BC179FBE8A0025F3B4 /* SVDColoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVDColoursViewController.m; sourceTree = "<group>"; };
+		665FF6BE179FBE990025F3B4 /* SVDLettersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVDLettersViewController.h; sourceTree = "<group>"; };
+		665FF6BF179FBE990025F3B4 /* SVDLettersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVDLettersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +96,8 @@
 			children = (
 				665FF69F179FBD980025F3B4 /* SVDAppDelegate.h */,
 				665FF6A0179FBD980025F3B4 /* SVDAppDelegate.m */,
-				665FF6A8179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard */,
-				665FF6AB179FBD980025F3B4 /* MainStoryboard_iPad.storyboard */,
-				665FF6AE179FBD980025F3B4 /* SVDViewController.h */,
-				665FF6AF179FBD980025F3B4 /* SVDViewController.m */,
+				665FF6B6179FBDE30025F3B4 /* Views */,
+				665FF6B7179FBDEB0025F3B4 /* Controllers */,
 				665FF697179FBD980025F3B4 /* Supporting Files */,
 			);
 			path = "Jacks Game";
@@ -108,6 +115,30 @@
 				665FF6A6179FBD980025F3B4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		665FF6B6179FBDE30025F3B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				665FF6A8179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard */,
+				665FF6AB179FBD980025F3B4 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		665FF6B7179FBDEB0025F3B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				665FF6AE179FBD980025F3B4 /* SVDMainViewController.h */,
+				665FF6AF179FBD980025F3B4 /* SVDMainViewController.m */,
+				665FF6B8179FBE130025F3B4 /* SVDNumbersViewController.h */,
+				665FF6B9179FBE130025F3B4 /* SVDNumbersViewController.m */,
+				665FF6BB179FBE8A0025F3B4 /* SVDColoursViewController.h */,
+				665FF6BC179FBE8A0025F3B4 /* SVDColoursViewController.m */,
+				665FF6BE179FBE990025F3B4 /* SVDLettersViewController.h */,
+				665FF6BF179FBE990025F3B4 /* SVDLettersViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +211,10 @@
 			files = (
 				665FF69D179FBD980025F3B4 /* main.m in Sources */,
 				665FF6A1179FBD980025F3B4 /* SVDAppDelegate.m in Sources */,
-				665FF6B0179FBD980025F3B4 /* SVDViewController.m in Sources */,
+				665FF6B0179FBD980025F3B4 /* SVDMainViewController.m in Sources */,
+				665FF6BA179FBE130025F3B4 /* SVDNumbersViewController.m in Sources */,
+				665FF6BD179FBE8A0025F3B4 /* SVDColoursViewController.m in Sources */,
+				665FF6C0179FBE990025F3B4 /* SVDLettersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jacks Game/Jacks Game-Prefix.pch";
 				INFOPLIST_FILE = "Jacks Game/Jacks Game-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jacks Game/Jacks Game-Prefix.pch";
 				INFOPLIST_FILE = "Jacks Game/Jacks Game-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +349,7 @@
 				665FF6B5179FBD980025F3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

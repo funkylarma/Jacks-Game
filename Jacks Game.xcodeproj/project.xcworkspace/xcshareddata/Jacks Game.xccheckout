@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D487D12-B1C2-44AE-A0CC-2040EAE09444</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jacks Game</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F150858-1B35-444A-ABCA-85E6460E2AB8</key>
+		<string>ssh://bitbucket.org/FunkyLarma/jacks-game.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F150858-1B35-444A-ABCA-85E6460E2AB8</key>
+		<string>../../../../projects/Jacks Game</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/FunkyLarma/jacks-game.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F150858-1B35-444A-ABCA-85E6460E2AB8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F150858-1B35-444A-ABCA-85E6460E2AB8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Jacks Game</string>
+		</dict>
+	</array>
+</dict>
+</plist>
