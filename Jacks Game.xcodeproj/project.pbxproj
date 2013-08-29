@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6649096917CF6E6900C37928 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6649096817CF6E6900C37928 /* Images.xcassets */; };
 		665FF691179FBD980025F3B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF690179FBD980025F3B4 /* UIKit.framework */; };
 		665FF693179FBD980025F3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF692179FBD980025F3B4 /* Foundation.framework */; };
 		665FF695179FBD980025F3B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF694179FBD980025F3B4 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6649096817CF6E6900C37928 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		665FF68D179FBD980025F3B4 /* Jacks Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jacks Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665FF690179FBD980025F3B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		665FF692179FBD980025F3B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6632196017CF6AEB009ADF01 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		665FF684179FBD980025F3B4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +103,10 @@
 		665FF696179FBD980025F3B4 /* Jacks Game */ = {
 			isa = PBXGroup;
 			children = (
-				665FF69F179FBD980025F3B4 /* SVDAppDelegate.h */,
-				665FF6A0179FBD980025F3B4 /* SVDAppDelegate.m */,
-				665FF6B6179FBDE30025F3B4 /* Views */,
 				665FF6B7179FBDEB0025F3B4 /* Controllers */,
+				665FF6B6179FBDE30025F3B4 /* Views */,
+				6632196017CF6AEB009ADF01 /* Images */,
+				6649096817CF6E6900C37928 /* Images.xcassets */,
 				665FF697179FBD980025F3B4 /* Supporting Files */,
 			);
 			path = "Jacks Game";
@@ -106,6 +115,8 @@
 		665FF697179FBD980025F3B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				665FF69F179FBD980025F3B4 /* SVDAppDelegate.h */,
+				665FF6A0179FBD980025F3B4 /* SVDAppDelegate.m */,
 				665FF698179FBD980025F3B4 /* Jacks Game-Info.plist */,
 				665FF699179FBD980025F3B4 /* InfoPlist.strings */,
 				665FF69C179FBD980025F3B4 /* main.m */,
@@ -170,6 +181,11 @@
 				CLASSPREFIX = SVD;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Stour Valley Designs";
+				TargetAttributes = {
+					665FF68C179FBD980025F3B4 = {
+						DevelopmentTeam = KQYFQUZRKP;
+					};
+				};
 			};
 			buildConfigurationList = 665FF688179FBD980025F3B4 /* Build configuration list for PBXProject "Jacks Game" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,6 +211,7 @@
 			files = (
 				665FF69B179FBD980025F3B4 /* InfoPlist.strings in Resources */,
 				665FF6A3179FBD980025F3B4 /* Default.png in Resources */,
+				6649096917CF6E6900C37928 /* Images.xcassets in Resources */,
 				665FF6A5179FBD980025F3B4 /* Default@2x.png in Resources */,
 				665FF6A7179FBD980025F3B4 /* Default-568h@2x.png in Resources */,
 				665FF6AA179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -309,11 +326,16 @@
 		665FF6B4179FBD980025F3B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jacks Game/Jacks Game-Prefix.pch";
 				INFOPLIST_FILE = "Jacks Game/Jacks Game-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -321,11 +343,16 @@
 		665FF6B5179FBD980025F3B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jacks Game/Jacks Game-Prefix.pch";
 				INFOPLIST_FILE = "Jacks Game/Jacks Game-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
