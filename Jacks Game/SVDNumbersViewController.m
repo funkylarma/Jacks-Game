@@ -70,11 +70,20 @@
 
 - (void)displayNumberAtIndex:(int)index
 {
+    // Get string values for the numbers
     NSString *number = self.index[index];
     NSString *word = self.numbers[self.index[index]];
+    
+    // Set the alpha levels of the images
+    [self.imgNumber setAlpha:1.0];
+    [self.imgWord setAlpha:0.0];
+    
+    // Load the images
     self.imgNumber.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", number]];
-    self.view.backgroundColor = [self randomBackgroundColour];
     self.imgWord.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", word]];
+    
+    // Set the background colour
+    self.view.backgroundColor = [self randomBackgroundColour];
 }
 
 - (UIColor *)randomBackgroundColour
@@ -86,8 +95,12 @@
     return colour;
 }
 
-- (IBAction)btnNext:(id)sender {
+- (IBAction)btnNext:(id)sender
+{
+    // Increase the counter
     self.counter++;
+    
+    // If the counter
     if (self.counter < [self.index count]) {
         [self displayNumberAtIndex:self.counter];
     } else {
@@ -96,13 +109,35 @@
     }
 }
 
-- (IBAction)btnPrev:(id)sender {
+- (IBAction)btnPrev:(id)sender
+{
+    // Decrease the counter
     self.counter--;
     if (self.counter >= 0) {
         [self displayNumberAtIndex:self.counter];
     } else {
         self.counter = 10;
         [self displayNumberAtIndex:self.counter];
+    }
+}
+
+- (IBAction)toggleDisplay:(id)sender
+{
+    // Check to see what image is visible
+    if (self.imgWord.alpha == 0.0) {
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgNumber setAlpha:0.0];
+        }];
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgWord setAlpha:1.0];
+        }];
+    } else {
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgNumber setAlpha:1.0];
+        }];
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgWord setAlpha:0.0];
+        }];
     }
 }
 

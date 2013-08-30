@@ -14,5 +14,6 @@
 
 - (IBAction)btnNext:(id)sender;
 - (IBAction)btnPrev:(id)sender;
+- (IBAction)toggleDisplay:(id)sender;
 
 @end

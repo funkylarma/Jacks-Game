@@ -97,11 +97,20 @@
 
 - (void)displayLetterAtIndex:(int)index
 {
+    // Get string values for the letter
     NSString *letter = self.index[index];
     NSString *letters = self.alphabet[self.index[index]];
-    self.view.backgroundColor = [self randomBackgroundColour];
+    
+    // Set the alpha levels of the images
+    [self.imgSingle setAlpha:1.0];
+    [self.imgCase setAlpha:0.0];
+
+    // Set the alpha levels of the images
     self.imgSingle.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letter]];
     self.imgCase.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letters]];
+    
+    // Set the background colour
+    self.view.backgroundColor = [self randomBackgroundColour];
 }
 
 - (UIColor *)randomBackgroundColour
@@ -113,7 +122,9 @@
     return colour;
 }
 
-- (IBAction)btnPrev:(id)sender {
+- (IBAction)btnPrev:(id)sender
+{
+    // Decrease the counter
     self.counter--;
     if (self.counter >= 0) {
         [self displayLetterAtIndex:self.counter];
@@ -123,13 +134,35 @@
     }
 }
 
-- (IBAction)btnNext:(id)sender {
+- (IBAction)btnNext:(id)sender
+{
+    // Increase the counter
     self.counter++;
     if (self.counter < [self.index count]) {
         [self displayLetterAtIndex:self.counter];
     } else {
         self.counter = 0;
         [self displayLetterAtIndex:self.counter];
+    }
+}
+
+- (IBAction)toggleDisplay:(id)sender
+{
+    // Check to see what image is visible
+    if (self.imgCase.alpha == 0.0) {
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgSingle setAlpha:0.0];
+        }];
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgCase setAlpha:1.0];
+        }];
+    } else {
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgSingle setAlpha:1.0];
+        }];
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.imgCase setAlpha:0.0];
+        }];
     }
 }
 @end
