@@ -10,8 +10,9 @@
 
 @interface SVDLettersViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *lblLetter;
-@property (weak, nonatomic) IBOutlet UILabel *lblLetters;
+@property (weak, nonatomic) IBOutlet UIImageView *imgSingle;
+@property (weak, nonatomic) IBOutlet UIImageView *imgCase;
+
 
 - (IBAction)btnPrev:(id)sender;
 - (IBAction)btnNext:(id)sender;

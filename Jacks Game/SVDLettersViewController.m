@@ -23,32 +23,32 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.alphabet = @{
-                          @"A" : @"aA",
-                          @"B" : @"bB",
-                          @"C" : @"cC",
-                          @"D" : @"dD",
-                          @"E" : @"eE",
-                          @"F" : @"fF",
-                          @"G" : @"gG",
-                          @"H" : @"hH",
-                          @"I" : @"iI",
-                          @"J" : @"jJ",
-                          @"K" : @"kK",
-                          @"L" : @"lL",
-                          @"M" : @"mM",
-                          @"N" : @"nN",
-                          @"O" : @"oO",
-                          @"P" : @"pP",
-                          @"Q" : @"qQ",
-                          @"R" : @"rR",
-                          @"S" : @"sS",
-                          @"T" : @"tT",
-                          @"U" : @"uU",
-                          @"V" : @"vV",
-                          @"W" : @"wW",
-                          @"X" : @"xX",
-                          @"Y" : @"yY",
-                          @"Z" : @"zZ",
+                          @"A" : @"Aa",
+                          @"B" : @"Bb",
+                          @"C" : @"Cc",
+                          @"D" : @"Dd",
+                          @"E" : @"Ee",
+                          @"F" : @"Ff",
+                          @"G" : @"Gg",
+                          @"H" : @"Hh",
+                          @"I" : @"Ii",
+                          @"J" : @"Jj",
+                          @"K" : @"Kk",
+                          @"L" : @"Ll",
+                          @"M" : @"Mm",
+                          @"N" : @"Nn",
+                          @"O" : @"Oo",
+                          @"P" : @"Pp",
+                          @"Q" : @"Qq",
+                          @"R" : @"Rr",
+                          @"S" : @"Ss",
+                          @"T" : @"Tt",
+                          @"U" : @"Uu",
+                          @"V" : @"Vv",
+                          @"W" : @"Ww",
+                          @"X" : @"Xx",
+                          @"Y" : @"Yy",
+                          @"Z" : @"Zz",
                           };
         self.index = @[
                        @"A",
@@ -99,8 +99,18 @@
 {
     NSString *letter = self.index[index];
     NSString *letters = self.alphabet[self.index[index]];
-    self.lblLetter.text = letter;
-    self.lblLetters.text = letters;
+    self.view.backgroundColor = [self randomBackgroundColour];
+    self.imgSingle.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letter]];
+    self.imgCase.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letters]];
+}
+
+- (UIColor *)randomBackgroundColour
+{
+    CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
+    UIColor *colour = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    return colour;
 }
 
 - (IBAction)btnPrev:(id)sender {

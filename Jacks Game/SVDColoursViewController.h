@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SVDColoursViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lblColour;
+@property (weak, nonatomic) IBOutlet UIImageView *imgColour;
+
+- (IBAction)btnNext:(id)sender;
+- (IBAction)btnPrev:(id)sender;
 
 @end
