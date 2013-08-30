@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SVDNumbersViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *lblNumber;
-@property (weak, nonatomic) IBOutlet UILabel *lblWord;
+@property (weak, nonatomic) IBOutlet UIImageView *imgNumber;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWord;
+
 - (IBAction)btnNext:(id)sender;
 - (IBAction)btnPrev:(id)sender;
 
