@@ -10,7 +10,6 @@
 		6649096917CF6E6900C37928 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6649096817CF6E6900C37928 /* Images.xcassets */; };
 		665FF691179FBD980025F3B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF690179FBD980025F3B4 /* UIKit.framework */; };
 		665FF693179FBD980025F3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF692179FBD980025F3B4 /* Foundation.framework */; };
-		665FF695179FBD980025F3B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF694179FBD980025F3B4 /* CoreGraphics.framework */; };
 		665FF69B179FBD980025F3B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665FF699179FBD980025F3B4 /* InfoPlist.strings */; };
 		665FF69D179FBD980025F3B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF69C179FBD980025F3B4 /* main.m */; };
 		665FF6A1179FBD980025F3B4 /* SVDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6A0179FBD980025F3B4 /* SVDAppDelegate.m */; };
@@ -57,20 +56,12 @@
 			files = (
 				665FF691179FBD980025F3B4 /* UIKit.framework in Frameworks */,
 				665FF693179FBD980025F3B4 /* Foundation.framework in Frameworks */,
-				665FF695179FBD980025F3B4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6632196017CF6AEB009ADF01 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		665FF684179FBD980025F3B4 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +94,6 @@
 			children = (
 				665FF6B7179FBDEB0025F3B4 /* Controllers */,
 				665FF6B6179FBDE30025F3B4 /* Views */,
-				6632196017CF6AEB009ADF01 /* Images */,
 				6649096817CF6E6900C37928 /* Images.xcassets */,
 				665FF697179FBD980025F3B4 /* Supporting Files */,
 			);
