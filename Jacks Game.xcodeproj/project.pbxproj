@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662C1197182F77E900E2B16B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662C1196182F77E900E2B16B /* MainStoryboard_iPad.storyboard */; };
 		6649096917CF6E6900C37928 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6649096817CF6E6900C37928 /* Images.xcassets */; };
 		665FF691179FBD980025F3B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF690179FBD980025F3B4 /* UIKit.framework */; };
 		665FF693179FBD980025F3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF692179FBD980025F3B4 /* Foundation.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		662C1196182F77E900E2B16B /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6649096817CF6E6900C37928 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		665FF68D179FBD980025F3B4 /* Jacks Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jacks Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665FF690179FBD980025F3B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				665FF6A8179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard */,
+				662C1196182F77E900E2B16B /* MainStoryboard_iPad.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				665FF6A5179FBD980025F3B4 /* Default@2x.png in Resources */,
 				665FF6A7179FBD980025F3B4 /* Default-568h@2x.png in Resources */,
 				665FF6AA179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				662C1197182F77E900E2B16B /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
