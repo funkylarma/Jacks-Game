@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SVDGameViewController.h"
 
-@interface SVDLettersViewController : UIViewController
+@interface LettersGameViewController : SVDGameViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgSingle;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCase;
+@property (strong, nonatomic) NSDictionary *alphabet;
 
 - (IBAction)btnPrev:(id)sender;
 - (IBAction)btnNext:(id)sender;

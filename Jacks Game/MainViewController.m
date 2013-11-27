@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Stour Valley Designs. All rights reserved.
 //
 
-#import "SVDMainViewController.h"
+#import "MainViewController.h"
 
-@interface SVDMainViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation SVDMainViewController
+@implementation MainViewController
 
 - (void)viewDidLoad
 {

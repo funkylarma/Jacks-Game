@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SVDGameViewController.h"
 
-@interface SVDColoursViewController : UIViewController
+@interface ColoursGameViewController : SVDGameViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *lblColour;
 @property (weak, nonatomic) IBOutlet UIImageView *imgColour;
+@property (strong, nonatomic) NSDictionary *colours;
 
 - (IBAction)btnNext:(id)sender;
 - (IBAction)btnPrev:(id)sender;

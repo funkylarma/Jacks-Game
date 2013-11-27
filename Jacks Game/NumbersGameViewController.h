@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SVDGameViewController.h"
 
-@interface SVDNumbersViewController : UIViewController
+@interface NumbersGameViewController : SVDGameViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *imgNumber;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWord;
+@property (strong, nonatomic) NSDictionary *numbers;
 
 - (IBAction)btnNext:(id)sender;
 - (IBAction)btnPrev:(id)sender;

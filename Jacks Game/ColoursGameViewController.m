@@ -6,17 +6,9 @@
 //  Copyright (c) 2013 Stour Valley Designs. All rights reserved.
 //
 
-#import "SVDColoursViewController.h"
+#import "ColoursGameViewController.h"
 
-@interface SVDColoursViewController ()
-
-@property (strong, nonatomic) NSDictionary *colours;
-@property (strong, nonatomic) NSArray *index;
-@property (nonatomic) int counter;
-
-@end
-
-@implementation SVDColoursViewController
+@implementation ColoursGameViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
