@@ -10,8 +10,11 @@
 
 @implementation ColoursGameViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
+
+#pragma mark - Initialisers
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.colours = @{
@@ -38,15 +41,30 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self displayColourAtIndex:self.counter];
 }
 
-- (void)displayColourAtIndex:(int)index
-{
+
+#pragma mark - Memory Management
+
+- (void)didReceiveMemoryWarning {
+    
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - GUI Updates
+
+- (void)displayColourAtIndex:(int)index {
+    
     // Set string value for the colour
     NSString *colour = self.index[index];
     
@@ -60,14 +78,11 @@
     self.view.backgroundColor = self.colours[colour];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-- (IBAction)btnNext:(id)sender
-{
+#pragma mark - IBActions
+
+- (IBAction)btnNext:(id)sender {
+    
     self.counter++;
     if (self.counter < [self.index count]) {
         [self displayColourAtIndex:self.counter];
@@ -77,8 +92,8 @@
     }
 }
 
-- (IBAction)btnPrev:(id)sender
-{
+- (IBAction)btnPrev:(id)sender {
+    
     self.counter--;
     if (self.counter >= 0) {
         [self displayColourAtIndex:self.counter];
@@ -88,8 +103,8 @@
     }
 }
 
-- (IBAction)toggleDisplay:(id)sender
-{
+- (IBAction)toggleDisplay:(id)sender {
+    
     // Check to see what image is visible
     if (self.imgColour.alpha == 0.0) {
         [UIView animateWithDuration:0.4 animations:^{

@@ -13,6 +13,11 @@
 @property (strong, nonatomic) NSArray *index;
 @property (nonatomic) int counter;
 
+/**
+ *  Sets the background to a randomly generated colour
+ *
+ *  @return UIColor
+ */
 - (UIColor *)randomBackgroundColour;
 
 @end

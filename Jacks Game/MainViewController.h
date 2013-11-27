@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SVDGameViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : SVDGameViewController
 
 @end

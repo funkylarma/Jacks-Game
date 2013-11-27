@@ -10,9 +10,11 @@
 
 @implementation NumbersGameViewController
 
+
 #pragma mark - Initialisers
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.numbers = @{
@@ -46,22 +48,30 @@
     return self;
 }
 
+
 #pragma mark - View Lifecycle
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     [self displayNumberAtIndex:self.counter];
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+#pragma mark - Memory Management
+
+- (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)displayNumberAtIndex:(int)index
-{
+
+#pragma mark - GUI Updates
+
+- (void)displayNumberAtIndex:(int)index {
+    
     // Get string values for the numbers
     NSString *number = self.index[index];
     NSString *word = self.numbers[self.index[index]];
@@ -78,8 +88,11 @@
     self.view.backgroundColor = [self randomBackgroundColour];
 }
 
-- (IBAction)btnNext:(id)sender
-{
+
+#pragma mark - IBActions
+
+- (IBAction)btnNext:(id)sender {
+    
     // Increase the counter
     self.counter++;
     
@@ -92,8 +105,8 @@
     }
 }
 
-- (IBAction)btnPrev:(id)sender
-{
+- (IBAction)btnPrev:(id)sender {
+    
     // Decrease the counter
     self.counter--;
     if (self.counter >= 0) {
@@ -104,8 +117,8 @@
     }
 }
 
-- (IBAction)toggleDisplay:(id)sender
-{
+- (IBAction)toggleDisplay:(id)sender {
+    
     // Check to see what image is visible
     if (self.imgWord.alpha == 0.0) {
         [UIView animateWithDuration:0.4 animations:^{

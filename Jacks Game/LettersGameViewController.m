@@ -10,8 +10,11 @@
 
 @implementation LettersGameViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
+
+#pragma mark - Initialisers
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.alphabet = @{
@@ -75,20 +78,29 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
 	[self displayLetterAtIndex:self.counter];
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+#pragma mark - Memory Management
+
+- (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)displayLetterAtIndex:(int)index
-{
+
+#pragma mark - GUI Updates
+
+- (void)displayLetterAtIndex:(int)index {
+    
     // Get string values for the letter
     NSString *letter = self.index[index];
     NSString *letters = self.alphabet[self.index[index]];
@@ -105,8 +117,11 @@
     self.view.backgroundColor = [self randomBackgroundColour];
 }
 
-- (IBAction)btnPrev:(id)sender
-{
+
+#pragma mark - IBActions
+
+- (IBAction)btnPrev:(id)sender {
+    
     // Decrease the counter
     self.counter--;
     if (self.counter >= 0) {
@@ -117,8 +132,8 @@
     }
 }
 
-- (IBAction)btnNext:(id)sender
-{
+- (IBAction)btnNext:(id)sender {
+    
     // Increase the counter
     self.counter++;
     if (self.counter < [self.index count]) {
@@ -129,8 +144,8 @@
     }
 }
 
-- (IBAction)toggleDisplay:(id)sender
-{
+- (IBAction)toggleDisplay:(id)sender {
+    
     // Check to see what image is visible
     if (self.imgCase.alpha == 0.0) {
         [UIView animateWithDuration:0.4 animations:^{
