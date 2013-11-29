@@ -14,36 +14,46 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r48-Vz-aoX">
-                                <rect key="frame" x="85" y="40" width="150" height="100"/>
+                                <rect key="frame" x="20" y="20" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Numbers">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mWo-hd-b8I" kind="modal" id="bhF-Xe-wsV"/>
+                                    <segue destination="mWo-hd-b8I" kind="modal" modalTransitionStyle="flipHorizontal" id="bhF-Xe-wsV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z3N-NE-yXu">
-                                <rect key="frame" x="85" y="180" width="150" height="100"/>
+                                <rect key="frame" x="20" y="128" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Colours">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ooW-QO-BYK" kind="modal" id="SFo-qb-RB8"/>
+                                    <segue destination="ooW-QO-BYK" kind="modal" modalTransitionStyle="flipHorizontal" id="SFo-qb-RB8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3PQ-dJ-pCq">
-                                <rect key="frame" x="85" y="320" width="150" height="100"/>
+                                <rect key="frame" x="20" y="249" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Letters">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Aeh-oc-FHn" kind="modal" id="scG-VR-tD3"/>
+                                    <segue destination="Aeh-oc-FHn" kind="modal" modalTransitionStyle="flipHorizontal" id="scG-VR-tD3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fr0-Xu-nsM">
+                                <rect key="frame" x="135" y="387" width="70" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hdc-fe-iGI" kind="modal" modalTransitionStyle="flipHorizontal" id="fqb-vN-MDI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +63,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="488" y="-439"/>
+        </scene>
+        <!--Shape Game View Controller-->
+        <scene sceneID="ge1-9o-upH">
+            <objects>
+                <viewController id="hdc-fe-iGI" customClass="ShapeGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7X-Nq-blY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="scn-RW-T7A">
+                                <rect key="frame" x="135" y="391" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="0uX-3Y-Sqb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uyh-uC-EdU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSz-lJ-KaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="1026"/>
         </scene>
         <!--Letters Game View Controller-->
         <scene sceneID="ekj-UT-GIO">
@@ -69,7 +106,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="0Qa-Mk-Jdi"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="0Qa-Mk-Jdi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="op9-fI-UMj">
@@ -141,7 +178,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="mcl-Au-Dzh"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="mcl-Au-Dzh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="soU-jA-Gwf">
@@ -230,7 +267,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="SCA-E6-t5e"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="SCA-E6-t5e"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xSD-YC-RuA">
