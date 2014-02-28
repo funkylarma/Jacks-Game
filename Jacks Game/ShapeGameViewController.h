@@ -11,4 +11,12 @@
 
 @interface ShapeGameViewController : SVDGameViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgShape;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWord;
+@property (strong, nonatomic) NSDictionary *shapes;
+
+- (IBAction)btnPrev:(id)sender;
+- (IBAction)btnNext:(id)sender;
+- (IBAction)toggleDisplay:(id)sender;
+
 @end

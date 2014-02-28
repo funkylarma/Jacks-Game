@@ -29,6 +29,16 @@
                          @"8"  : @"Eight",
                          @"9"  : @"Nine",
                          @"10" : @"Ten",
+                         @"11" : @"Eleven",
+                         @"12" : @"Twelve",
+                         @"13" : @"Thirteen",
+                         @"14" : @"Fourteen",
+                         @"15" : @"Fithteen",
+                         @"16" : @"Sixteen",
+                         @"17" : @"Seventeen",
+                         @"18" : @"Eighteen",
+                         @"19" : @"Nineteen",
+                         @"20" : @"Twenty"
                          };
         self.index = @[
                        @"0",
@@ -42,6 +52,16 @@
                        @"8",
                        @"9",
                        @"10",
+                       @"11",
+                       @"12",
+                       @"13",
+                       @"14",
+                       @"15",
+                       @"16",
+                       @"17",
+                       @"18",
+                       @"19",
+                       @"20"
                        ];
         self.counter = 0;
     }
@@ -112,7 +132,7 @@
     if (self.counter >= 0) {
         [self displayNumberAtIndex:self.counter];
     } else {
-        self.counter = 10;
+        self.counter = 20;
         [self displayNumberAtIndex:self.counter];
     }
 }
