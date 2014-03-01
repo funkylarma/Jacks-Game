@@ -88,7 +88,7 @@
   if (self.counter >= 0) {
     [self displayShapeAtIndex:self.counter];
   } else {
-    self.counter = 6;
+    self.counter = ([self.index count] - 1);
     [self displayShapeAtIndex:self.counter];
   }
 }

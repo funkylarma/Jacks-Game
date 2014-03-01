@@ -15,57 +15,57 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.numbers = @{
-                         @"0"  : @"Zero",
-                         @"1"  : @"One",
-                         @"2"  : @"Two",
-                         @"3"  : @"Three",
-                         @"4"  : @"Four",
-                         @"5"  : @"Five",
-                         @"6"  : @"Six",
-                         @"7"  : @"Seven",
-                         @"8"  : @"Eight",
-                         @"9"  : @"Nine",
-                         @"10" : @"Ten",
-                         @"11" : @"Eleven",
-                         @"12" : @"Twelve",
-                         @"13" : @"Thirteen",
-                         @"14" : @"Fourteen",
-                         @"15" : @"Fithteen",
-                         @"16" : @"Sixteen",
-                         @"17" : @"Seventeen",
-                         @"18" : @"Eighteen",
-                         @"19" : @"Nineteen",
-                         @"20" : @"Twenty"
-                         };
-        self.index = @[
-                       @"0",
-                       @"1",
-                       @"2",
-                       @"3",
-                       @"4",
-                       @"5",
-                       @"6",
-                       @"7",
-                       @"8",
-                       @"9",
-                       @"10",
-                       @"11",
-                       @"12",
-                       @"13",
-                       @"14",
-                       @"15",
-                       @"16",
-                       @"17",
-                       @"18",
-                       @"19",
-                       @"20"
-                       ];
-        self.counter = 0;
-    }
-    return self;
+  self = [super initWithCoder:aDecoder];
+  if (self) {
+      self.numbers = @{
+                       @"0"  : @"Zero",
+                       @"1"  : @"One",
+                       @"2"  : @"Two",
+                       @"3"  : @"Three",
+                       @"4"  : @"Four",
+                       @"5"  : @"Five",
+                       @"6"  : @"Six",
+                       @"7"  : @"Seven",
+                       @"8"  : @"Eight",
+                       @"9"  : @"Nine",
+                       @"10" : @"Ten",
+                       @"11" : @"Eleven",
+                       @"12" : @"Twelve",
+                       @"13" : @"Thirteen",
+                       @"14" : @"Fourteen",
+                       @"15" : @"Fithteen",
+                       @"16" : @"Sixteen",
+                       @"17" : @"Seventeen",
+                       @"18" : @"Eighteen",
+                       @"19" : @"Nineteen",
+                       @"20" : @"Twenty"
+                       };
+      self.index = @[
+                     @"0",
+                     @"1",
+                     @"2",
+                     @"3",
+                     @"4",
+                     @"5",
+                     @"6",
+                     @"7",
+                     @"8",
+                     @"9",
+                     @"10",
+                     @"11",
+                     @"12",
+                     @"13",
+                     @"14",
+                     @"15",
+                     @"16",
+                     @"17",
+                     @"18",
+                     @"19",
+                     @"20"
+                     ];
+      self.counter = 0;
+  }
+  return self;
 }
 
 
@@ -73,9 +73,10 @@
 
 - (void)viewDidLoad {
     
-    [super viewDidLoad];
-    
-    [self displayNumberAtIndex:self.counter];
+  [super viewDidLoad];
+  
+  // Display the first number
+  [self displayNumberAtIndex:self.counter];
 }
 
 
@@ -83,8 +84,8 @@
 
 - (void)didReceiveMemoryWarning {
     
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 
@@ -92,20 +93,20 @@
 
 - (void)displayNumberAtIndex:(int)index {
     
-    // Get string values for the numbers
-    NSString *number = self.index[index];
-    NSString *word = self.numbers[self.index[index]];
-    
-    // Set the alpha levels of the images
-    [self.imgNumber setAlpha:1.0];
-    [self.imgWord setAlpha:0.0];
-    
-    // Load the images
-    self.imgNumber.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", number]];
-    self.imgWord.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", word]];
-    
-    // Set the background colour
-    self.view.backgroundColor = [self randomBackgroundColour];
+  // Get string values for the numbers
+  NSString *number = self.index[index];
+  NSString *word = self.numbers[self.index[index]];
+  
+  // Set the alpha levels of the images
+  [self.imgNumber setAlpha:1.0];
+  [self.imgWord setAlpha:0.0];
+  
+  // Load the images
+  self.imgNumber.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", number]];
+  self.imgWord.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", word]];
+  
+  // Set the background colour
+  self.view.backgroundColor = [self randomBackgroundColour];
 }
 
 
@@ -113,48 +114,48 @@
 
 - (IBAction)btnNext:(id)sender {
     
-    // Increase the counter
-    self.counter++;
-    
-    // If the counter
-    if (self.counter < [self.index count]) {
-        [self displayNumberAtIndex:self.counter];
-    } else {
-        self.counter = 0;
-        [self displayNumberAtIndex:self.counter];
-    }
+  // Increase the counter
+  self.counter++;
+  
+  // If the counter
+  if (self.counter < [self.index count]) {
+    [self displayNumberAtIndex:self.counter];
+  } else {
+    self.counter = 0;
+    [self displayNumberAtIndex:self.counter];
+  }
 }
 
 - (IBAction)btnPrev:(id)sender {
     
-    // Decrease the counter
-    self.counter--;
-    if (self.counter >= 0) {
-        [self displayNumberAtIndex:self.counter];
-    } else {
-        self.counter = 20;
-        [self displayNumberAtIndex:self.counter];
-    }
+  // Decrease the counter
+  self.counter--;
+  if (self.counter >= 0) {
+    [self displayNumberAtIndex:self.counter];
+  } else {
+    self.counter = ([self.index count] - 1);
+    [self displayNumberAtIndex:self.counter];
+  }
 }
 
 - (IBAction)toggleDisplay:(id)sender {
     
-    // Check to see what image is visible
-    if (self.imgWord.alpha == 0.0) {
-        [UIView animateWithDuration:0.4 animations:^{
-            [self.imgNumber setAlpha:0.0];
-        }];
-        [UIView animateWithDuration:0.4 animations:^{
-            [self.imgWord setAlpha:1.0];
-        }];
-    } else {
-        [UIView animateWithDuration:0.4 animations:^{
-            [self.imgNumber setAlpha:1.0];
-        }];
-        [UIView animateWithDuration:0.4 animations:^{
-            [self.imgWord setAlpha:0.0];
-        }];
-    }
+  // Check to see what image is visible
+  if (self.imgWord.alpha == 0.0) {
+    [UIView animateWithDuration:0.4 animations:^{
+      [self.imgNumber setAlpha:0.0];
+    }];
+    [UIView animateWithDuration:0.4 animations:^{
+      [self.imgWord setAlpha:1.0];
+    }];
+  } else {
+    [UIView animateWithDuration:0.4 animations:^{
+      [self.imgNumber setAlpha:1.0];
+    }];
+    [UIView animateWithDuration:0.4 animations:^{
+      [self.imgWord setAlpha:0.0];
+    }];
+  }
 }
 
 @end

@@ -19,9 +19,10 @@
 
 - (void)viewDidLoad {
     
-    [super viewDidLoad];
+  [super viewDidLoad];
+  
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [self randomBackgroundColour];
+  self.view.backgroundColor = [self randomBackgroundColour];
 }
 
 
@@ -29,8 +30,8 @@
 
 - (void)didReceiveMemoryWarning {
     
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 @end

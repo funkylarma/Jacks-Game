@@ -11,7 +11,6 @@
 
 @interface ColoursGameViewController : SVDGameViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *lblColour;
 @property (weak, nonatomic) IBOutlet UIImageView *imgColour;
 @property (strong, nonatomic) NSDictionary *colours;
 
