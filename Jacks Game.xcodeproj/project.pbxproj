@@ -24,7 +24,27 @@
 		665FF6C0179FBE990025F3B4 /* LettersGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FF6BF179FBE990025F3B4 /* LettersGameViewController.m */; };
 		666B3F8C184623F60091FA19 /* SVDGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B3F8B184623F60091FA19 /* SVDGameViewController.m */; };
 		666B3F8F184626D80091FA19 /* ShapeGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B3F8E184626D80091FA19 /* ShapeGameViewController.m */; };
+		667070C118C1D803002F10CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667070C018C1D803002F10CF /* XCTest.framework */; };
+		667070C218C1D803002F10CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF692179FBD980025F3B4 /* Foundation.framework */; };
+		667070C318C1D803002F10CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FF690179FBD980025F3B4 /* UIKit.framework */; };
+		667070C918C1D803002F10CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 667070C718C1D803002F10CF /* InfoPlist.strings */; };
+		667070D318C1D983002F10CF /* SVDGameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070D218C1D983002F10CF /* SVDGameViewControllerTests.m */; };
+		667070D518C1D9C9002F10CF /* MainViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070D418C1D9C9002F10CF /* MainViewControllerTests.m */; };
+		667070D718C1D9EC002F10CF /* NumberGameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070D618C1D9EC002F10CF /* NumberGameViewControllerTests.m */; };
+		667070D918C1DA09002F10CF /* ColoursGameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070D818C1DA09002F10CF /* ColoursGameViewControllerTests.m */; };
+		667070DB18C1DA27002F10CF /* LettersGameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070DA18C1DA27002F10CF /* LettersGameViewControllerTests.m */; };
+		667070DD18C1DA46002F10CF /* ShapeGameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667070DC18C1DA46002F10CF /* ShapeGameViewControllerTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		667070CD18C1D803002F10CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665FF685179FBD980025F3B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665FF68C179FBD980025F3B4;
+			remoteInfo = "Jacks Game";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		662C1196182F77E900E2B16B /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -55,6 +75,17 @@
 		666B3F8B184623F60091FA19 /* SVDGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVDGameViewController.m; sourceTree = "<group>"; };
 		666B3F8D184626D80091FA19 /* ShapeGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeGameViewController.h; sourceTree = "<group>"; };
 		666B3F8E184626D80091FA19 /* ShapeGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeGameViewController.m; sourceTree = "<group>"; };
+		667070BF18C1D803002F10CF /* Jacks Game Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jacks Game Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		667070C018C1D803002F10CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		667070C618C1D803002F10CF /* Jacks Game Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jacks Game Tests-Info.plist"; sourceTree = "<group>"; };
+		667070C818C1D803002F10CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		667070CC18C1D803002F10CF /* Jacks Game Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jacks Game Tests-Prefix.pch"; sourceTree = "<group>"; };
+		667070D218C1D983002F10CF /* SVDGameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVDGameViewControllerTests.m; path = ../SVDGameViewControllerTests.m; sourceTree = "<group>"; };
+		667070D418C1D9C9002F10CF /* MainViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTests.m; sourceTree = "<group>"; };
+		667070D618C1D9EC002F10CF /* NumberGameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberGameViewControllerTests.m; sourceTree = "<group>"; };
+		667070D818C1DA09002F10CF /* ColoursGameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursGameViewControllerTests.m; sourceTree = "<group>"; };
+		667070DA18C1DA27002F10CF /* LettersGameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LettersGameViewControllerTests.m; sourceTree = "<group>"; };
+		667070DC18C1DA46002F10CF /* ShapeGameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeGameViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +98,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		667070BC18C1D803002F10CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667070C118C1D803002F10CF /* XCTest.framework in Frameworks */,
+				667070C318C1D803002F10CF /* UIKit.framework in Frameworks */,
+				667070C218C1D803002F10CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				665FF696179FBD980025F3B4 /* Jacks Game */,
+				667070C418C1D803002F10CF /* Jacks Game Tests */,
 				665FF68F179FBD980025F3B4 /* Frameworks */,
 				665FF68E179FBD980025F3B4 /* Products */,
 			);
@@ -83,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				665FF68D179FBD980025F3B4 /* Jacks Game.app */,
+				667070BF18C1D803002F10CF /* Jacks Game Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +136,7 @@
 				665FF690179FBD980025F3B4 /* UIKit.framework */,
 				665FF692179FBD980025F3B4 /* Foundation.framework */,
 				665FF694179FBD980025F3B4 /* CoreGraphics.framework */,
+				667070C018C1D803002F10CF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,18 +182,42 @@
 			children = (
 				665FF6AE179FBD980025F3B4 /* MainViewController.h */,
 				665FF6AF179FBD980025F3B4 /* MainViewController.m */,
+				666B3F8A184623F60091FA19 /* SVDGameViewController.h */,
+				666B3F8B184623F60091FA19 /* SVDGameViewController.m */,
+				665FF6BE179FBE990025F3B4 /* LettersGameViewController.h */,
+				665FF6BF179FBE990025F3B4 /* LettersGameViewController.m */,
 				665FF6B8179FBE130025F3B4 /* NumbersGameViewController.h */,
 				665FF6B9179FBE130025F3B4 /* NumbersGameViewController.m */,
 				665FF6BB179FBE8A0025F3B4 /* ColoursGameViewController.h */,
 				665FF6BC179FBE8A0025F3B4 /* ColoursGameViewController.m */,
-				665FF6BE179FBE990025F3B4 /* LettersGameViewController.h */,
-				665FF6BF179FBE990025F3B4 /* LettersGameViewController.m */,
-				666B3F8A184623F60091FA19 /* SVDGameViewController.h */,
-				666B3F8B184623F60091FA19 /* SVDGameViewController.m */,
 				666B3F8D184626D80091FA19 /* ShapeGameViewController.h */,
 				666B3F8E184626D80091FA19 /* ShapeGameViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		667070C418C1D803002F10CF /* Jacks Game Tests */ = {
+			isa = PBXGroup;
+			children = (
+				667070D418C1D9C9002F10CF /* MainViewControllerTests.m */,
+				667070D218C1D983002F10CF /* SVDGameViewControllerTests.m */,
+				667070DA18C1DA27002F10CF /* LettersGameViewControllerTests.m */,
+				667070D618C1D9EC002F10CF /* NumberGameViewControllerTests.m */,
+				667070D818C1DA09002F10CF /* ColoursGameViewControllerTests.m */,
+				667070DC18C1DA46002F10CF /* ShapeGameViewControllerTests.m */,
+				667070C518C1D803002F10CF /* Supporting Files */,
+			);
+			path = "Jacks Game Tests";
+			sourceTree = "<group>";
+		};
+		667070C518C1D803002F10CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				667070C618C1D803002F10CF /* Jacks Game Tests-Info.plist */,
+				667070C718C1D803002F10CF /* InfoPlist.strings */,
+				667070CC18C1D803002F10CF /* Jacks Game Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +240,24 @@
 			productReference = 665FF68D179FBD980025F3B4 /* Jacks Game.app */;
 			productType = "com.apple.product-type.application";
 		};
+		667070BE18C1D803002F10CF /* Jacks Game Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667070CF18C1D803002F10CF /* Build configuration list for PBXNativeTarget "Jacks Game Tests" */;
+			buildPhases = (
+				667070BB18C1D803002F10CF /* Sources */,
+				667070BC18C1D803002F10CF /* Frameworks */,
+				667070BD18C1D803002F10CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667070CE18C1D803002F10CF /* PBXTargetDependency */,
+			);
+			name = "Jacks Game Tests";
+			productName = "Jacks Game Tests";
+			productReference = 667070BF18C1D803002F10CF /* Jacks Game Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +270,9 @@
 				TargetAttributes = {
 					665FF68C179FBD980025F3B4 = {
 						DevelopmentTeam = KQYFQUZRKP;
+					};
+					667070BE18C1D803002F10CF = {
+						TestTargetID = 665FF68C179FBD980025F3B4;
 					};
 				};
 			};
@@ -200,6 +289,7 @@
 			projectRoot = "";
 			targets = (
 				665FF68C179FBD980025F3B4 /* Jacks Game */,
+				667070BE18C1D803002F10CF /* Jacks Game Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +306,14 @@
 				665FF6A7179FBD980025F3B4 /* Default-568h@2x.png in Resources */,
 				665FF6AA179FBD980025F3B4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				662C1197182F77E900E2B16B /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667070BD18C1D803002F10CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667070C918C1D803002F10CF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +335,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		667070BB18C1D803002F10CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667070DB18C1DA27002F10CF /* LettersGameViewControllerTests.m in Sources */,
+				667070D918C1DA09002F10CF /* ColoursGameViewControllerTests.m in Sources */,
+				667070DD18C1DA46002F10CF /* ShapeGameViewControllerTests.m in Sources */,
+				667070D318C1D983002F10CF /* SVDGameViewControllerTests.m in Sources */,
+				667070D718C1D9EC002F10CF /* NumberGameViewControllerTests.m in Sources */,
+				667070D518C1D9C9002F10CF /* MainViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		667070CE18C1D803002F10CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665FF68C179FBD980025F3B4 /* Jacks Game */;
+			targetProxy = 667070CD18C1D803002F10CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		665FF699179FBD980025F3B4 /* InfoPlist.strings */ = {
@@ -254,6 +373,14 @@
 				665FF6A9179FBD980025F3B4 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		667070C718C1D803002F10CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667070C818C1D803002F10CF /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +480,67 @@
 			};
 			name = Release;
 		};
+		667070D018C1D803002F10CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jacks Game.app/Jacks Game";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jacks Game Tests/Jacks Game Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Jacks Game Tests/Jacks Game Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		667070D118C1D803002F10CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jacks Game.app/Jacks Game";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jacks Game Tests/Jacks Game Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Jacks Game Tests/Jacks Game Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +561,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		667070CF18C1D803002F10CF /* Build configuration list for PBXNativeTarget "Jacks Game Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667070D018C1D803002F10CF /* Debug */,
+				667070D118C1D803002F10CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
